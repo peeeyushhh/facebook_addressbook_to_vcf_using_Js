@@ -5,6 +5,33 @@ Prerequisites
 -Node.js
 -cheerio package
 
+
+Instructions:
+
+-Ensure you have Node.js installed. If not, download and install it from Node.js.
+-Create a new directory and navigate into it.
+-Run npm init -y to create a package.json file.
+-Run npm install cheerio to install the cheerio package.
+-Save the script above as extract_contacts.js.
+-Place your HTML file (your_address_books.html) in the same directory as the script.
+-Run the script using node extract_contacts.js.
+
+Detailed Steps:
+
+-Initialization: Ensure you are in the directory where you want to run the script.
+-Install Dependencies: Run npm install cheerio to install the required package.
+-Save Script: Save the script code above in a file named extract_contacts.js.
+-Run Script: Execute the script with node extract_contacts.js.
+-This updated script includes additional debugging statements:
+
+-It prints the first 1000 characters of the HTML content to verify the file is being loaded correctly.
+-It logs the number of .cnt div elements found.
+-It logs if no contact name is found for a given div index.
+-It prints the extracted contacts and the generated VCF content before saving it to the file.
+-This should help identify where the issue lies in the extraction and file generation process.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 Step 1 Clone the repository:
 git clone https://github.com/yourusername/contact-extractor.git
 cd contact-extractor
